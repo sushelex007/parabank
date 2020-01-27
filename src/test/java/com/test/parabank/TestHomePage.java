@@ -27,6 +27,19 @@ public class TestHomePage extends BaseClass
 		home.getSendBtn().click();
 	}
 	
+	@Test
+	public void testAboutUs() throws Exception
+	{
+		String msg = "ParaBank is a demo site used for demonstration of Parasoft software solutions.\n" + 
+				"All materials herein are used solely for simulating a realistic online banking website.";
+		if(driver==null)
+		{
+			WebDriver driver = initalizeDriver();
+			driver.get(p.getProperty("url"));
+			HomePage home = new HomePage(driver);
+			driver.get();
+		}
+	}
 
 
 @AfterSuite

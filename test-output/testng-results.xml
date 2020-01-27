@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-27T18:25:46Z" name="Default suite" finished-at="2020-01-27T18:26:01Z" duration-ms="14989">
+    <groups>
+    </groups>
+    <test started-at="2020-01-27T18:25:46Z" name="Default test" finished-at="2020-01-27T18:26:01Z" duration-ms="14989">
+      <class name="com.test.parabank.TestHomePage">
+        <test-method signature="testHomePgae()[pri:0, instance:com.test.parabank.TestHomePage@192c3f1e]" started-at="2020-01-27T18:25:46Z" name="testHomePgae" finished-at="2020-01-27T18:26:01Z" duration-ms="14932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePgae -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.test.parabank.TestHomePage@192c3f1e]" started-at="2020-01-27T18:26:01Z" name="quiteBrowser" finished-at="2020-01-27T18:26:02Z" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+      </class> <!-- com.test.parabank.TestHomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

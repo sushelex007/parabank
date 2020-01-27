@@ -37,7 +37,8 @@ public class TestHomePage extends BaseClass
 			WebDriver driver = initalizeDriver();
 			driver.get(p.getProperty("url"));
 			HomePage home = new HomePage(driver);
-			driver.get();
+			home.getAbout().click();
+			
 		}
 	}
 

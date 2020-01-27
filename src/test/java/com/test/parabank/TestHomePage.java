@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
+
 public class TestHomePage extends BaseClass
 {
 	@Test
@@ -30,14 +32,17 @@ public class TestHomePage extends BaseClass
 	@Test
 	public void testAboutUs() throws Exception
 	{
-		String msg = "ParaBank is a demo site used for demonstration of Parasoft software solutions.\n" + 
-				"All materials herein are used solely for simulating a realistic online banking website.";
+		String msg = "ParaBank is a demo site used for demonstration of Parasoft software solutions. \nAll materials herein are used solely for simulating a realistic online banking website.";
 		if(driver==null)
 		{
 			WebDriver driver = initalizeDriver();
 			driver.get(p.getProperty("url"));
 			HomePage home = new HomePage(driver);
 			home.getAbout().click();
+			String displayedTexts = home.getDisplayedMsg().getText();
+			System.out.println("msg"+ msg);
+			System.out.println("displayedTexts"+displayedTexts.trim());
+			Assert.assertEquals(msg.trim(), displayedTexts);
 			
 		}
 	}

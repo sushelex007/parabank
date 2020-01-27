@@ -42,6 +42,14 @@ public class HomePage
 	@FindBy(xpath="//li[@class='aboutus']/a[1]")
 	WebElement about;
 	
+	@FindBy(xpath="//div[@id='rightPanel']/p[1]")
+	WebElement displayedMsg;
+	
+	public WebElement getDisplayedMsg()
+	{
+		return displayedMsg;
+	}
+	
 	public WebElement getAbout()
 	{
 		return about;

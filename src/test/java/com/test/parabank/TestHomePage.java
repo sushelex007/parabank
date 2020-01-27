@@ -27,11 +27,6 @@ public class TestHomePage extends BaseClass
 		home.getSendBtn().click();
 	}
 	
-	@Test
-	public void testAbout()
-	{
-		
-	}
 
 
 @AfterSuite

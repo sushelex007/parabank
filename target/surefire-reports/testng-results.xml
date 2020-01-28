@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-28T19:47:17 IST" name="Suite" finished-at="2020-01-28T19:47:53 IST" duration-ms="35578">
+  <suite started-at="2020-01-28T20:08:56 IST" name="Suite" finished-at="2020-01-28T20:09:22 IST" duration-ms="25652">
     <groups>
     </groups>
-    <test started-at="2020-01-28T19:47:17 IST" name="Test" finished-at="2020-01-28T19:47:53 IST" duration-ms="35578">
+    <test started-at="2020-01-28T20:08:56 IST" name="Test" finished-at="2020-01-28T20:09:22 IST" duration-ms="25652">
       <class name="com.test.parabank.TestHomePage">
-        <test-method signature="testAboutUs()[pri:0, instance:com.test.parabank.TestHomePage@23348b5d]" started-at="2020-01-28T19:47:17 IST" name="testAboutUs" finished-at="2020-01-28T19:47:51 IST" duration-ms="33069" status="PASS">
+        <test-method signature="testAboutUs()[pri:0, instance:com.test.parabank.TestHomePage@38afe297]" started-at="2020-01-28T20:08:56 IST" name="testAboutUs" finished-at="2020-01-28T20:09:20 IST" duration-ms="23987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAboutUs -->
-        <test-method signature="testCustomerCare()[pri:0, instance:com.test.parabank.TestHomePage@23348b5d]" started-at="2020-01-28T19:47:51 IST" name="testCustomerCare" finished-at="2020-01-28T19:47:53 IST" duration-ms="2478" status="PASS">
+        <test-method signature="testCustomerCare()[pri:0, instance:com.test.parabank.TestHomePage@38afe297]" started-at="2020-01-28T20:09:20 IST" name="testCustomerCare" finished-at="2020-01-28T20:09:22 IST" duration-ms="1640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerCare -->
-        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.test.parabank.TestHomePage@23348b5d]" started-at="2020-01-28T19:47:53 IST" name="quiteBrowser" finished-at="2020-01-28T19:47:55 IST" duration-ms="2072" status="PASS">
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.test.parabank.TestHomePage@38afe297]" started-at="2020-01-28T20:09:22 IST" name="quiteBrowser" finished-at="2020-01-28T20:09:22 IST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->

@@ -5,7 +5,6 @@
     <classes>
       <class name="com.test.parabank.TestHomePage">
         <methods>
-          <include name="testCustomerCare"/>
           <include name="testAboutUs"/>
           <include name="quiteBrowser"/>
         </methods>

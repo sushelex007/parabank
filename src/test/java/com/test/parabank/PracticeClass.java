@@ -10,11 +10,13 @@ public class PracticeClass {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriver driver = new FirefoxDriver();
+		//WebDriver driver = new FirefoxDriver();
 		//WebDriver driver = new ChromeDriver();
-		driver.get("https://parabank.parasoft.com/parabank/admin.htm");
+		//driver.get("https://parabank.parasoft.com/parabank/admin.htm");
+		String os = System.getProperty("os.name");
+		System.out.print(os);
 		Thread.sleep(4L);
-		driver.close();
+		//driver.close();
 		
 
 	}

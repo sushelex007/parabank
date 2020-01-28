@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-28T14:24:22 IST" name="Default suite" finished-at="2020-01-28T14:24:22 IST" duration-ms="102">
+  <suite started-at="2020-01-28T17:26:47 IST" name="Default suite" finished-at="2020-01-28T17:27:12 IST" duration-ms="25545">
     <groups>
     </groups>
-    <test started-at="2020-01-28T14:24:22 IST" name="Default test" finished-at="2020-01-28T14:24:22 IST" duration-ms="102">
+    <test started-at="2020-01-28T17:26:47 IST" name="Default test" finished-at="2020-01-28T17:27:12 IST" duration-ms="25545">
       <class name="com.test.parabank.TestHomePage">
-        <test-method signature="testAboutUs()[pri:0, instance:com.test.parabank.TestHomePage@3c947bc5]" started-at="2020-01-28T14:24:22 IST" name="testAboutUs" finished-at="2020-01-28T14:24:22 IST" duration-ms="71" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
+        <test-method signature="testAboutUs()[pri:0, instance:com.test.parabank.TestHomePage@3c947bc5]" started-at="2020-01-28T17:26:47 IST" name="testAboutUs" finished-at="2020-01-28T17:27:11 IST" duration-ms="24005" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
             <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+              <![CDATA[expected:<... ...> but was:<......>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.test.parabank.BaseClass.initalizeDriver(BaseClass.java:35)
-at com.test.parabank.TestHomePage.testAboutUs(TestHomePage.java:38)
+              <![CDATA[junit.framework.ComparisonFailure: expected:<... ...> but was:<......>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at com.test.parabank.TestHomePage.testAboutUs(TestHomePage.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,88 +47,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- junit.framework.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAboutUs -->
-        <test-method signature="testCustomerCare()[pri:0, instance:com.test.parabank.TestHomePage@3c947bc5]" started-at="2020-01-28T14:24:22 IST" name="testCustomerCare" finished-at="2020-01-28T14:24:22 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.test.parabank.BaseClass.initalizeDriver(BaseClass.java:35)
-at com.test.parabank.TestHomePage.testCustomerCare(TestHomePage.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method signature="testCustomerCare()[pri:0, instance:com.test.parabank.TestHomePage@3c947bc5]" started-at="2020-01-28T17:27:11 IST" name="testCustomerCare" finished-at="2020-01-28T17:27:12 IST" duration-ms="1514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerCare -->
-        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.test.parabank.TestHomePage@3c947bc5]" started-at="2020-01-28T14:24:22 IST" name="quiteBrowser" finished-at="2020-01-28T14:24:22 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.test.parabank.TestHomePage.quiteBrowser(TestHomePage.java:55)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:351)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.test.parabank.TestHomePage@3c947bc5]" started-at="2020-01-28T17:27:12 IST" name="quiteBrowser" finished-at="2020-01-28T17:27:12 IST" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->

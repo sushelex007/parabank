@@ -32,7 +32,7 @@ public class TestHomePage extends BaseClass
 	/*
 	 * Verify the About us functionality is working and when click the icon, it shows the right message
 	 */
-	@Test
+	@Test(enabled = false)
 	public void testAboutUs() throws Exception
 	{
 		String msg = "ParaBank is a demo site used for demonstration ";

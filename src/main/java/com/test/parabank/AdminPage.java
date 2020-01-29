@@ -44,6 +44,14 @@ public class AdminPage
 	@FindBy(css="#loanProcessorThreshold")
 	WebElement threshold;
 	
+	@FindBy(xpath="//div/p/b")
+	WebElement initialMessage;
+	
+	public WebElement getInitialMessage()
+	{
+		return initialMessage;
+	}
+	
 	public WebElement getThreshold()
 	{
 		return threshold;

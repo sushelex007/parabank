@@ -45,6 +45,13 @@ public class HomePage
 	@FindBy(xpath="//div[@id='rightPanel']/p[1]")
 	WebElement displayedMsg;
 	
+	@FindBy(linkText="Admin Page")
+	WebElement adminPage;
+	
+	public WebElement getAdminPage()
+	{
+		return adminPage;
+	}
 	public WebElement getDisplayedMsg()
 	{
 		return displayedMsg;

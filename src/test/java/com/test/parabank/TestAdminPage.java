@@ -24,6 +24,9 @@ public class TestAdminPage extends BaseClass
 		initalMessage = initalMessage.trim();
 		Assert.assertEquals(initalMessage, p.getProperty("initial_message").trim());
 		System.out.println(initalMessage);
+		admin.getClean().click();
+		String clean_message = admin.getInitialMessage().getText().trim();
+		Assert.assertEquals(clean_message, p.getProperty("clean_message"),"clean message is not correct");
 	}
 	
 	@AfterSuite

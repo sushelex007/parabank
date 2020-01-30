@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,11 +14,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.logging.log4j.LogManager;
+
+
+
 
 public class BaseClass{
 	public static WebDriver driver;
 	public static Properties p= new Properties();
+//	public static Logger log = Logger.getLogger(BaseClass.class.getName());
 //	Actions act = new Actions(driver);
+//	public static Logger log = LogManager.getLogger(BaseClass.class.getName());
 	public WebDriver initalizeDriver()throws FileNotFoundException, IOException
 	{
 		String os = System.getProperty("os.name");

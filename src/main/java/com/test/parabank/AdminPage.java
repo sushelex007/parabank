@@ -47,6 +47,14 @@ public class AdminPage
 	@FindBy(xpath="//div/p/b")
 	WebElement initialMessage;
 	
+	@FindBy(xpath="//form[@name='toggleJms']/table/tbody/tr/td[2]")
+	WebElement jmsStatus;
+	
+	public WebElement getJmsStatus()
+	{
+		return jmsStatus;
+	}
+	
 	public WebElement getInitialMessage()
 	{
 		return initialMessage;

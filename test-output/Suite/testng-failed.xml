@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.test.listners.UseListners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.test.parabank.TestHomePage">
+      <class name="com.test.parabank.TestAdminPage">
         <methods>
-          <include name="testHomePgae"/>
+          <include name="adminTest"/>
+          <include name="cleanUp"/>
         </methods>
-      </class> <!-- com.test.parabank.TestHomePage -->
+      </class> <!-- com.test.parabank.TestAdminPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

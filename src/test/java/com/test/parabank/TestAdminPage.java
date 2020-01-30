@@ -16,6 +16,7 @@ public class TestAdminPage extends BaseClass
 	{
 		WebDriver driver = initalizeDriver();
 		driver.get(p.getProperty("url"));
+//		log.info("url "+p.getProperty("url"+" is triggered"));
 		HomePage home = new HomePage(driver);
 		home.getAdminPage().click();
 		AdminPage admin = new AdminPage(driver);
@@ -27,6 +28,12 @@ public class TestAdminPage extends BaseClass
 		admin.getClean().click();
 		String clean_message = admin.getInitialMessage().getText().trim();
 		Assert.assertEquals(clean_message, p.getProperty("clean_message"),"clean message is not correct");
+		admin.getStartup().click();
+		String startup = admin.getJmsStatus().getText().trim();
+		Assert.assertEquals(startup, p.getProperty("startup_status"));
+		admin.getStartup().click();
+		startup = admin.getJmsStatus().getText().trim();
+		Assert.assertEquals(startup, p.getProperty("shutdown_status"), "startup button is not working");
 	}
 	
 	@AfterSuite

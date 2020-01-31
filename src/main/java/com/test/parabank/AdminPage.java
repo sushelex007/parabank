@@ -1,5 +1,7 @@
 package com.test.parabank;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,7 +22,7 @@ public class AdminPage
 	@FindBy(xpath="//button[@value='CLEAN']")
 	WebElement clean;
 	
-	@FindBy(xpath="//input[@value='Startup']")
+	@FindBy(xpath="//table[@class='form2']/tbody[1]/tr[1]/td[3]/input")
 	WebElement startup;
 	
 	@FindBy(xpath="//table[@class='form']/tbody/tr/td/input")
@@ -49,6 +51,15 @@ public class AdminPage
 	
 	@FindBy(xpath="//form[@name='toggleJms']/table/tbody/tr/td[2]")
 	WebElement jmsStatus;
+	
+	@FindBy(xpath="//input[@name='accessMode']")
+	List <WebElement> radios;
+	
+	public List<WebElement> getRadios(){
+		return radios;
+	}
+	
+	
 	
 	public WebElement getJmsStatus()
 	{

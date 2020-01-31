@@ -3,7 +3,10 @@ package com.test.parabank;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +17,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.test.utilities.BasicUtilities;
+
 import org.apache.logging.log4j.LogManager;
 
 
@@ -22,6 +28,7 @@ import org.apache.logging.log4j.LogManager;
 public class BaseClass{
 	public static WebDriver driver;
 	public static Properties p= new Properties();
+	BasicUtilities utility = new BasicUtilities();
 //	public static Logger log = Logger.getLogger(BaseClass.class.getName());
 //	Actions act = new Actions(driver);
 //	public static Logger log = LogManager.getLogger(BaseClass.class.getName());
@@ -133,6 +140,17 @@ public class BaseClass{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public Iterator<WebElement> getIterators(List<WebElement> elements)
+	{
+		Iterator<WebElement> itr = elements.iterator();
+		return itr;
+	}
+	
+	public void waitNow(int duration)
+	{
+		driver.manage().timeouts().implicitlyWait(duration, TimeUnit.SECONDS);
 	}
 }
 

@@ -7,8 +7,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,10 +15,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.test.utilities.BasicUtilities;
 
-import org.apache.logging.log4j.LogManager;
 
 
 
@@ -45,6 +41,7 @@ public class BaseClass{
 		else if(os.contains("mac"))
 		{
 			fis = new FileInputStream(System.getProperty("user.dir")+"/resources/property.properties");
+			System.out.println(System.getProperty("user.dir")+"/resources/property.properties");
 		}
 		
 		else

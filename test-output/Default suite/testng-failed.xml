@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.parabank.TestAdminPage">
+      <class name="com.test.parabank.TestHomePage">
         <methods>
-          <include name="adminTest"/>
-          <include name="cleanUp"/>
+          <include name="testCustomerCare"/>
+          <include name="quiteBrowser"/>
         </methods>
-      </class> <!-- com.test.parabank.TestAdminPage -->
+      </class> <!-- com.test.parabank.TestHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

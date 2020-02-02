@@ -1,0 +1,4 @@
+23:23:35.387 [main] INFO  com.test.parabank.BaseClass - https://parabank.parasoft.com/parabank/index.htm is invoked
+23:23:35.509 [main] INFO  com.test.parabank.BaseClass - after wait
+23:23:37.468 [main] INFO  com.test.parabank.BaseClass - Action class action is used
+23:23:38.106 [main] INFO  com.test.parabank.BaseClass - send button is clicked

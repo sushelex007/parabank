@@ -12,23 +12,27 @@ import junit.framework.Assert;
 public class TestHomePage extends BaseClass
 {
 	@Test
-	public void testCustomerCare() throws IOException
+	public void testCustomerCare()
 	{
-		WebDriver driver = initalizeDriver();
+		WebDriver driver = null;;
+		driver = initalizeDriver();
 		driver.get(p.getProperty("url"));
-		
+		log.info(p.getProperty("url")+" is invoked");
 		HomePage home = new HomePage(driver);
 		getWait(home.getCustomerCare());
+		log.info("after wait");
 		home.getCustomerCare().click();
 		home.getccName().sendKeys("sushil");
 		home.getccEmail().sendKeys("sushelex");
 		home.getccPhone().sendKeys("8871776327");
 		home.getccMessage().sendKeys("hi hello how are you!!!!");
 		getAction().moveToElement(home.getSendBtn()).build().perform();
+		log.info("Action class action is used");
 		getSleep(3);
 		home.getSendBtn().click();
+		log.info("send button is clicked");
 	}
-	
+
 	/*
 	 * Verify the About us functionality is working and when click the icon, it shows the right message
 	 */
@@ -44,16 +48,16 @@ public class TestHomePage extends BaseClass
 			home.getAbout().click();
 			String displayedTexts = home.getDisplayedMsg().getText();
 			Assert.assertTrue(displayedTexts.contains(msg));
-			
+
 		}
 	}
 
 
-@AfterSuite
-public void quiteBrowser()
-{
-	System.out.println("suite completed, closing the browser");
-	driver.close();
-}
+	@AfterSuite
+	public void quiteBrowser()
+	{
+		System.out.println("suite completed, closing the browser");
+		driver.close();
+	}
 
 }

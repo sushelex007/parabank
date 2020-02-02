@@ -7,6 +7,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,23 +28,31 @@ public class BaseClass{
 	public static WebDriver driver;
 	public static Properties p= new Properties();
 	BasicUtilities utility = new BasicUtilities();
-//	public static Logger log = Logger.getLogger(BaseClass.class.getName());
-//	Actions act = new Actions(driver);
-//	public static Logger log = LogManager.getLogger(BaseClass.class.getName());
-	public WebDriver initalizeDriver()throws FileNotFoundException, IOException
+	static Logger log = LogManager.getLogger(BaseClass.class);
+	public WebDriver initalizeDriver()
 	{
 		String os = System.getProperty("os.name");
-		FileInputStream fis;
+		FileInputStream fis = null;
 		os = os.toLowerCase();
 		if(os.contains("window"))
 		{
-			fis = new FileInputStream(System.getProperty("user.dir")+"\\resources\\property.properties");
+			try {
+				fis = new FileInputStream(System.getProperty("user.dir")+"\\properties\\property.properties");
+			} catch (FileNotFoundException e) {
+				
+				log.error(e.getMessage());
+			}
 		}
 		
 		else if(os.contains("mac"))
 		{
-			fis = new FileInputStream(System.getProperty("user.dir")+"/resources/property.properties");
-			System.out.println(System.getProperty("user.dir")+"/resources/property.properties");
+			try {
+				fis = new FileInputStream(System.getProperty("user.dir")+"/properties/property.properties");
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				log.error(e.getMessage());
+			}
+			System.out.println(System.getProperty("user.dir")+"/properties/property.properties");
 		}
 		
 		else
@@ -49,7 +60,12 @@ public class BaseClass{
 			throw new RuntimeException("do not support except mac os and windows");
 		}
 		
-		p.load(fis);
+		try {
+			p.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			log.error(e.getMessage());
+		}
 		String browser = p.getProperty("broswer");
 		
 		if(browser.equals("chrome"))

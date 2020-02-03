@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-03T17:40:09 IST" name="Default suite" finished-at="2020-02-03T17:40:26 IST" duration-ms="17118">
+  <suite started-at="2020-02-03T19:28:56 IST" name="Default suite" finished-at="2020-02-03T19:29:17 IST" duration-ms="20345">
     <groups>
     </groups>
-    <test started-at="2020-02-03T17:40:09 IST" name="Default test" finished-at="2020-02-03T17:40:26 IST" duration-ms="17118">
+    <test started-at="2020-02-03T19:28:56 IST" name="Default test" finished-at="2020-02-03T19:29:17 IST" duration-ms="20345">
       <class name="com.test.parabank.TestAdminPage">
-        <test-method signature="adminTest()[pri:0, instance:com.test.parabank.TestAdminPage@20a8a64e]" started-at="2020-02-03T17:40:09 IST" name="adminTest" finished-at="2020-02-03T17:40:24 IST" duration-ms="15070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminTest -->
-        <test-method signature="triggerBrowser()[pri:0, instance:com.test.parabank.TestAdminPage@20a8a64e]" started-at="2020-02-03T17:40:24 IST" name="triggerBrowser" finished-at="2020-02-03T17:40:25 IST" duration-ms="899" status="PASS">
+        <test-method signature="triggerBrowser()[pri:0, instance:com.test.parabank.TestAdminPage@62f4ff3b]" started-at="2020-02-03T19:28:56 IST" name="triggerBrowser" finished-at="2020-02-03T19:29:06 IST" duration-ms="9778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- triggerBrowser -->
-        <test-method signature="applicationSettings()[pri:0, instance:com.test.parabank.TestAdminPage@20a8a64e]" started-at="2020-02-03T17:40:25 IST" name="applicationSettings" finished-at="2020-02-03T17:40:25 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="107" status="PASS">
+        <test-method signature="testApplicationSettings()[pri:0, instance:com.test.parabank.TestAdminPage@62f4ff3b]" started-at="2020-02-03T19:29:06 IST" name="testApplicationSettings" finished-at="2020-02-03T19:29:16 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="10497" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- applicationSettings -->
-        <test-method signature="testAccessMode()[pri:0, instance:com.test.parabank.TestAdminPage@20a8a64e]" started-at="2020-02-03T17:40:25 IST" name="testAccessMode" finished-at="2020-02-03T17:40:26 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="968" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAccessMode -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.test.parabank.TestAdminPage@20a8a64e]" started-at="2020-02-03T17:40:31 IST" name="cleanUp" finished-at="2020-02-03T17:40:32 IST" duration-ms="746" status="PASS">
+        </test-method> <!-- testApplicationSettings -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.test.parabank.TestAdminPage@62f4ff3b]" started-at="2020-02-03T19:29:22 IST" name="cleanUp" finished-at="2020-02-03T19:29:23 IST" duration-ms="1777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

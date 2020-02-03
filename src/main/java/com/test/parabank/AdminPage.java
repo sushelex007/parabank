@@ -61,6 +61,14 @@ public class AdminPage
 	@FindBy(css="#minimumBalance")
 	WebElement minimumBalance;
 	
+	@FindBy(css="input[value='Submit']")
+	WebElement submit;
+	
+	public WebElement getSubmit()
+	{
+		return submit;
+	}
+	
 	public WebElement getInitialBalance()
 	{
 		return initialBalance;

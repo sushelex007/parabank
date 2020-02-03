@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
@@ -21,7 +22,7 @@ public class TestAdminPage extends BaseClass
 		home.getAdminPage().click();
 		
 	}
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void adminTest() throws Exception
 	{
 		WebDriver driver = initalizeDriver();
@@ -46,7 +47,7 @@ public class TestAdminPage extends BaseClass
 		Assert.assertEquals(startup, p.getProperty("shutdown_status"), "startup button is not working");
 	}
 	
-	@Test(dependsOnMethods= {"triggerBrowser"}, enabled=true)
+	@Test(dependsOnMethods= {"triggerBrowser"}, enabled=false)
 	public void testAccessMode() throws InterruptedException 
 	{
 		WebElement ele;
@@ -73,7 +74,7 @@ public class TestAdminPage extends BaseClass
 		System.out.println(link);
 		Assert.assertEquals(linkStatus, true, "link is broken");
 	}
-	@Test(dependsOnMethods= {"triggerBrowser"})
+	@Test(dependsOnMethods= {"triggerBrowser"}, enabled=false)
 	public void applicationSettings()
 	{
 		AdminPage admin = new AdminPage(driver);
@@ -96,6 +97,34 @@ public class TestAdminPage extends BaseClass
 		{
 			logging(className).info(e.getMessage());
 		}
+	}
+	@Test(dependsOnMethods= {"triggerBrowser"})
+	public void testApplicationSettings()
+	{
+		AdminPage admin = new AdminPage(driver);
+		Select loanProvide = new Select(admin.getLoanProvider());
+		List<WebElement> loanProviderElements = loanProvide.getOptions();
+		int providerLen = loanProviderElements.size();
+		logging(className).info("providerlength:", providerLen);
+		Select loanProcess = new Select(admin.getLoanProcessor());
+		List<WebElement> loanProcessElements = loanProcess.getOptions();
+		int processLen = loanProcessElements.size();
+		logging(className).info("process selct box length:"+processLen);
+		for(int i=0; i<providerLen;i++)
+		{
+			loanProvide.selectByIndex(i);
+			for(int j=0; j<processLen;j++)
+			{
+				loanProcess.selectByIndex(j);
+				admin.getSubmit().click();
+				System.out.println(admin.getInitialMessage().getText());
+				logging(className).info(admin.getInitialMessage());
+				Assert.assertEquals(admin.getInitialMessage().getText(), p.getProperty("setting_saved"), "saved message is not correct");
+				waitNow(4);
+				
+			}
+		}
+		
 	}
 	
 	@AfterSuite

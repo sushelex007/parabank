@@ -1,5 +1,1 @@
-17:40:19.961 [main] INFO  com.test.parabank.TestAdminPage adminTest - url null
-17:40:25.920 [main] INFO  com.test.parabank.TestAdminPage applicationSettings - initialBalance is-1000.00
-17:40:25.960 [main] INFO  com.test.parabank.TestAdminPage applicationSettings - minimum balance-100.00
-17:40:25.985 [main] INFO  com.test.parabank.BaseClass getIterators - iterator is defined
-17:40:25.986 [main] INFO  com.test.parabank.TestAdminPage testAccessMode - radio buttons extracted as a List and iterator is defined
+19:29:16.972 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (32727147-2380-314d-98b9-cfe47dbde611)] -> xpath: //div/p/b]

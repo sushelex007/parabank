@@ -1,4 +1,5 @@
-23:23:35.387 [main] INFO  com.test.parabank.BaseClass - https://parabank.parasoft.com/parabank/index.htm is invoked
-23:23:35.509 [main] INFO  com.test.parabank.BaseClass - after wait
-23:23:37.468 [main] INFO  com.test.parabank.BaseClass - Action class action is used
-23:23:38.106 [main] INFO  com.test.parabank.BaseClass - send button is clicked
+17:40:19.961 [main] INFO  com.test.parabank.TestAdminPage adminTest - url null
+17:40:25.920 [main] INFO  com.test.parabank.TestAdminPage applicationSettings - initialBalance is-1000.00
+17:40:25.960 [main] INFO  com.test.parabank.TestAdminPage applicationSettings - minimum balance-100.00
+17:40:25.985 [main] INFO  com.test.parabank.BaseClass getIterators - iterator is defined
+17:40:25.986 [main] INFO  com.test.parabank.TestAdminPage testAccessMode - radio buttons extracted as a List and iterator is defined

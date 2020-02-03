@@ -1,0 +1,4 @@
+17:12:32.203 [main] INFO  com.test.parabank.TestAdminPage adminTest - url null
+17:12:39.563 [main] INFO  com.test.parabank.TestAdminPage applicationSettings - initialBalance is-1000.00
+17:12:39.619 [main] INFO  com.test.parabank.TestAdminPage applicationSettings - minimum balance-100.00
+17:12:39.647 [main] INFO  com.test.parabank.TestAdminPage testAccessMode - radio buttons extracted as a List and iterator is defined

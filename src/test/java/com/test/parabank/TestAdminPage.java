@@ -1,6 +1,5 @@
 package com.test.parabank;
-
-import java.io.FileNotFoundException;
+import java.lang.String;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
@@ -13,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class TestAdminPage extends BaseClass
 {
-	
+	Class<?> className = TestAdminPage.class;
 	@Test(enabled=true)
 	public void triggerBrowser() throws Exception, IOException {
 		WebDriver driver = initalizeDriver();
@@ -22,12 +21,12 @@ public class TestAdminPage extends BaseClass
 		home.getAdminPage().click();
 		
 	}
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void adminTest() throws Exception
 	{
 		WebDriver driver = initalizeDriver();
 		driver.get(p.getProperty("url"));
-//		log.info("url "+p.getProperty("url"+" is triggered"));
+		logging(className).info("url "+p.getProperty("url"+" is triggered"));
 		HomePage home = new HomePage(driver);
 		home.getAdminPage().click();
 		AdminPage admin = new AdminPage(driver);
@@ -47,13 +46,14 @@ public class TestAdminPage extends BaseClass
 		Assert.assertEquals(startup, p.getProperty("shutdown_status"), "startup button is not working");
 	}
 	
-	@Test(dependsOnMethods= {"triggerBrowser"}, enabled=false)
+	@Test(dependsOnMethods= {"triggerBrowser"}, enabled=true)
 	public void testAccessMode() throws InterruptedException 
 	{
 		WebElement ele;
 		AdminPage admin = new AdminPage(driver);
 		List<WebElement> radios = admin.getRadios();
 		Iterator<WebElement> element= getIterators(radios);
+		logging(className).info("radio buttons extracted as a List and iterator is defined");
 		while(element.hasNext())
 		{
 			ele = element.next();
@@ -63,14 +63,39 @@ public class TestAdminPage extends BaseClass
 			ele.click();
 		}
 	}
-	@Test(dependsOnMethods= {"triggerBrowser"})
+	@Test(dependsOnMethods= {"triggerBrowser"}, enabled=false)
 	public void testWebService()
 	{
 		AdminPage admin = new AdminPage(driver);
+		
 		String link = admin.getWsdl().getAttribute("href");
 		boolean linkStatus = utility.checkBrokenLink(link);
 		System.out.println(link);
 		Assert.assertEquals(linkStatus, true, "link is broken");
+	}
+	@Test(dependsOnMethods= {"triggerBrowser"})
+	public void applicationSettings()
+	{
+		AdminPage admin = new AdminPage(driver);
+		try
+		{
+			Assert.assertTrue(admin.getInitialBalance().getAttribute("value").equals(p.getProperty("inbal")), "inital value mismatch");
+			logging(className).info("initialBalance is-"+admin.getInitialBalance().getAttribute("value"));
+		}
+		catch(Exception e)
+		{
+			System.out.println("in catch block");
+			logging(className).error(e.getMessage());
+		}
+		try
+		{
+			Assert.assertTrue(admin.getMinimumBalance().getAttribute("value").equals(p.getProperty("minbal")), "balance value mismatch");
+			logging(className).info("minimum balance-"+admin.getMinimumBalance().getAttribute("value"));
+		}
+		catch(Exception e)
+		{
+			logging(className).info(e.getMessage());
+		}
 	}
 	
 	@AfterSuite

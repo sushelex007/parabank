@@ -25,10 +25,17 @@ import com.test.utilities.BasicUtilities;
 
 
 public class BaseClass{
+	Class<?> className = BaseClass.class;
 	public static WebDriver driver;
 	public static Properties p= new Properties();
 	BasicUtilities utility = new BasicUtilities();
-	static Logger log = LogManager.getLogger(BaseClass.class);
+	static Logger log = null;
+	static Logger gol = LogManager.getLogger();
+	public Logger logging(Class<?> className)
+	{
+		log = LogManager.getLogger(className);
+		return log;
+	}
 	public WebDriver initalizeDriver()
 	{
 		String os = System.getProperty("os.name");
@@ -158,6 +165,7 @@ public class BaseClass{
 	public Iterator<WebElement> getIterators(List<WebElement> elements)
 	{
 		Iterator<WebElement> itr = elements.iterator();
+		logging(className).info("iterator is defined");
 		return itr;
 	}
 	

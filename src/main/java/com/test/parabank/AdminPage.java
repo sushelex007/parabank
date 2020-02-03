@@ -55,6 +55,21 @@ public class AdminPage
 	@FindBy(xpath="//input[@name='accessMode']")
 	List <WebElement> radios;
 	
+	@FindBy(css="#initialBalance")
+	WebElement initialBalance;
+	
+	@FindBy(css="#minimumBalance")
+	WebElement minimumBalance;
+	
+	public WebElement getInitialBalance()
+	{
+		return initialBalance;
+	}
+	public WebElement getMinimumBalance()
+	{
+		return minimumBalance;
+	}
+	
 	public List<WebElement> getRadios(){
 		return radios;
 	}

@@ -11,26 +11,27 @@ import junit.framework.Assert;
 
 public class TestHomePage extends BaseClass
 {
+	Class<?> className = TestHomePage.class;
 	@Test
 	public void testCustomerCare()
 	{
 		WebDriver driver = null;;
 		driver = initalizeDriver();
 		driver.get(p.getProperty("url"));
-		log.info(p.getProperty("url")+" is invoked");
+		logging(className).info(p.getProperty("url")+" is invoked");
 		HomePage home = new HomePage(driver);
 		getWait(home.getCustomerCare());
-		log.info("after wait");
+		logging(className).info("after wait");
 		home.getCustomerCare().click();
 		home.getccName().sendKeys("sushil");
 		home.getccEmail().sendKeys("sushelex");
 		home.getccPhone().sendKeys("8871776327");
 		home.getccMessage().sendKeys("hi hello how are you!!!!");
 		getAction().moveToElement(home.getSendBtn()).build().perform();
-		log.info("Action class action is used");
+		logging(className).info("Action class action is used");
 		getSleep(3);
 		home.getSendBtn().click();
-		log.info("send button is clicked");
+		logging(className).info("send button is clicked");
 	}
 
 	/*
@@ -44,9 +45,11 @@ public class TestHomePage extends BaseClass
 		{
 			WebDriver driver = initalizeDriver();
 			driver.get(p.getProperty("url"));
+			logging(className).info(p.getProperty("url"));
 			HomePage home = new HomePage(driver);
 			home.getAbout().click();
 			String displayedTexts = home.getDisplayedMsg().getText();
+			logging(className).warn(displayedTexts);
 			Assert.assertTrue(displayedTexts.contains(msg));
 
 		}

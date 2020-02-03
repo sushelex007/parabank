@@ -1,25 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-03T19:28:56 IST" name="Default suite" finished-at="2020-02-03T19:29:17 IST" duration-ms="20345">
+  <suite started-at="2020-02-03T20:06:55 IST" name="Suite" finished-at="2020-02-03T20:07:27 IST" duration-ms="31605">
     <groups>
     </groups>
-    <test started-at="2020-02-03T19:28:56 IST" name="Default test" finished-at="2020-02-03T19:29:17 IST" duration-ms="20345">
+    <test started-at="2020-02-03T20:06:55 IST" name="Test" finished-at="2020-02-03T20:07:27 IST" duration-ms="31605">
+      <class name="com.test.parabank.TestHomePage">
+        <test-method signature="testCustomerCare()[pri:0, instance:com.test.parabank.TestHomePage@163d04ff]" started-at="2020-02-03T20:06:55 IST" name="testCustomerCare" finished-at="2020-02-03T20:07:09 IST" duration-ms="13788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCustomerCare -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.test.parabank.TestHomePage@163d04ff]" started-at="2020-02-03T20:07:33 IST" name="quiteBrowser" finished-at="2020-02-03T20:07:33 IST" duration-ms="27" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sushils-MacBook-Air.local', ip: 'fe80:0:0:0:8f1:8bd1:7a4f:2a72%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '11.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 5083, moz:profile: /var/folders/9f/v16xhxxs6gg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4212cc61-330c-2d4e-b1d1-68a59013d2ab]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sushils-MacBook-Air.local', ip: 'fe80:0:0:0:8f1:8bd1:7a4f:2a72%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '11.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 5083, moz:profile: /var/folders/9f/v16xhxxs6gg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4212cc61-330c-2d4e-b1d1-68a59013d2ab
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.test.parabank.TestHomePage.quiteBrowser(TestHomePage.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:351)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+      </class> <!-- com.test.parabank.TestHomePage -->
       <class name="com.test.parabank.TestAdminPage">
-        <test-method signature="triggerBrowser()[pri:0, instance:com.test.parabank.TestAdminPage@62f4ff3b]" started-at="2020-02-03T19:28:56 IST" name="triggerBrowser" finished-at="2020-02-03T19:29:06 IST" duration-ms="9778" status="PASS">
+        <test-method signature="adminTest()[pri:0, instance:com.test.parabank.TestAdminPage@7c209437]" started-at="2020-02-03T20:07:09 IST" name="adminTest" finished-at="2020-02-03T20:07:15 IST" duration-ms="5903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminTest -->
+        <test-method signature="triggerBrowser()[pri:0, instance:com.test.parabank.TestAdminPage@7c209437]" started-at="2020-02-03T20:07:15 IST" name="triggerBrowser" finished-at="2020-02-03T20:07:16 IST" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- triggerBrowser -->
-        <test-method signature="testApplicationSettings()[pri:0, instance:com.test.parabank.TestAdminPage@62f4ff3b]" started-at="2020-02-03T19:29:06 IST" name="testApplicationSettings" finished-at="2020-02-03T19:29:16 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="10497" status="PASS">
+        <test-method signature="applicationSettings()[pri:0, instance:com.test.parabank.TestAdminPage@7c209437]" started-at="2020-02-03T20:07:16 IST" name="applicationSettings" finished-at="2020-02-03T20:07:16 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationSettings -->
+        <test-method signature="testAccessMode()[pri:0, instance:com.test.parabank.TestAdminPage@7c209437]" started-at="2020-02-03T20:07:16 IST" name="testAccessMode" finished-at="2020-02-03T20:07:17 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessMode -->
+        <test-method signature="testApplicationSettings()[pri:0, instance:com.test.parabank.TestAdminPage@7c209437]" started-at="2020-02-03T20:07:17 IST" name="testApplicationSettings" finished-at="2020-02-03T20:07:25 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="8103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplicationSettings -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.test.parabank.TestAdminPage@62f4ff3b]" started-at="2020-02-03T19:29:22 IST" name="cleanUp" finished-at="2020-02-03T19:29:23 IST" duration-ms="1777" status="PASS">
+        <test-method signature="testWebService()[pri:0, instance:com.test.parabank.TestAdminPage@7c209437]" started-at="2020-02-03T20:07:25 IST" name="testWebService" finished-at="2020-02-03T20:07:27 IST" depends-on-methods="com.test.parabank.TestAdminPage.triggerBrowser" duration-ms="1822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebService -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.test.parabank.TestAdminPage@7c209437]" started-at="2020-02-03T20:07:32 IST" name="cleanUp" finished-at="2020-02-03T20:07:33 IST" duration-ms="746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- com.test.parabank.TestAdminPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

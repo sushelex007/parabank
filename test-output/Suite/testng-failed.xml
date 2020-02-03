@@ -8,7 +8,8 @@
     <classes>
       <class name="com.test.parabank.TestAdminPage">
         <methods>
-          <include name="adminTest"/>
+          <include name="applicationSettings"/>
+          <include name="triggerBrowser"/>
           <include name="cleanUp"/>
         </methods>
       </class> <!-- com.test.parabank.TestAdminPage -->

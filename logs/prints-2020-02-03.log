@@ -1,3 +1,3 @@
-19:29:13.249 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (32727147-2380-314d-98b9-cfe47dbde611)] -> xpath: //div/p/b]
-19:29:14.305 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (32727147-2380-314d-98b9-cfe47dbde611)] -> xpath: //div/p/b]
-19:29:16.065 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (32727147-2380-314d-98b9-cfe47dbde611)] -> xpath: //div/p/b]
+20:07:22.033 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (4212cc61-330c-2d4e-b1d1-68a59013d2ab)] -> xpath: //div/p/b]
+20:07:22.770 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (4212cc61-330c-2d4e-b1d1-68a59013d2ab)] -> xpath: //div/p/b]
+20:07:23.880 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (4212cc61-330c-2d4e-b1d1-68a59013d2ab)] -> xpath: //div/p/b]

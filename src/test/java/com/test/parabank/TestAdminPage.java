@@ -127,6 +127,12 @@ public class TestAdminPage extends BaseClass
 		
 	}
 	
+	@Test
+	public void failTheTest()
+	{
+		Assert.assertEquals(1, -1);
+	}
+	
 	@AfterSuite
 	public void cleanUp()
 	{

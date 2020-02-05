@@ -1,3 +1,2 @@
-20:15:11.357 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (3d601266-ef34-8f4f-aa28-cb0602b2e2cb)] -> xpath: //div/p/b]
-20:15:12.145 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (3d601266-ef34-8f4f-aa28-cb0602b2e2cb)] -> xpath: //div/p/b]
-20:15:12.894 [main] INFO  com.test.parabank.TestAdminPage testApplicationSettings - [[FirefoxDriver: firefox on MAC (3d601266-ef34-8f4f-aa28-cb0602b2e2cb)] -> xpath: //div/p/b]
+19:54:13.039 [main] INFO  com.test.parabank.TestHomePage testCustomerCare - Action class action is used
+19:54:13.443 [main] INFO  com.test.parabank.TestHomePage testCustomerCare - send button is clicked

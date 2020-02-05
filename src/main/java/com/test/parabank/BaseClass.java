@@ -18,13 +18,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.test.extentreports.ExtentReportClass;
 import com.test.utilities.BasicUtilities;
 
-
-
-
-
 public class BaseClass{
+//	ExtentReportClass extentreport = new ExtentReportClass();
 	Class<?> className = BaseClass.class;
 	public static WebDriver driver;
 	public static Properties p= new Properties();

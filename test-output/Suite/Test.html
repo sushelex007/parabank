@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 03 20:14:43 IST 2020</td>
+<td>Started on:</td><td>Tue Feb 04 14:29:43 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31081 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29388 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,58 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.parabank.TestAdminPage.failTheTest()'><b>failTheTest</b><br>Test class: com.test.parabank.TestAdminPage</td>
+<td><div><pre>java.lang.AssertionError: expected [-1] but found [1]
+	at com.test.parabank.TestAdminPage.failTheTest(TestAdminPage.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1443335402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1443335402'><pre>java.lang.AssertionError: expected [-1] but found [1]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at com.test.parabank.TestAdminPage.failTheTest(TestAdminPage.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.test.parabank.TestAdminPage@d8305c2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,38 +129,38 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.test.parabank.TestAdminPage.adminTest()'><b>adminTest</b><br>Test class: com.test.parabank.TestAdminPage</td>
 <td></td>
-<td>6</td>
-<td>com.test.parabank.TestAdminPage@7c209437</td></tr>
+<td>5</td>
+<td>com.test.parabank.TestAdminPage@d8305c2</td></tr>
 <tr>
 <td title='com.test.parabank.TestAdminPage.applicationSettings()'><b>applicationSettings</b><br>Test class: com.test.parabank.TestAdminPage</td>
 <td></td>
 <td>0</td>
-<td>com.test.parabank.TestAdminPage@7c209437</td></tr>
+<td>com.test.parabank.TestAdminPage@d8305c2</td></tr>
 <tr>
 <td title='com.test.parabank.TestAdminPage.testAccessMode()'><b>testAccessMode</b><br>Test class: com.test.parabank.TestAdminPage</td>
 <td></td>
 <td>0</td>
-<td>com.test.parabank.TestAdminPage@7c209437</td></tr>
+<td>com.test.parabank.TestAdminPage@d8305c2</td></tr>
 <tr>
 <td title='com.test.parabank.TestAdminPage.testApplicationSettings()'><b>testApplicationSettings</b><br>Test class: com.test.parabank.TestAdminPage</td>
 <td></td>
-<td>8</td>
-<td>com.test.parabank.TestAdminPage@7c209437</td></tr>
+<td>7</td>
+<td>com.test.parabank.TestAdminPage@d8305c2</td></tr>
 <tr>
 <td title='com.test.parabank.TestHomePage.testCustomerCare()'><b>testCustomerCare</b><br>Test class: com.test.parabank.TestHomePage</td>
 <td></td>
 <td>12</td>
-<td>com.test.parabank.TestHomePage@163d04ff</td></tr>
+<td>com.test.parabank.TestHomePage@18230356</td></tr>
 <tr>
 <td title='com.test.parabank.TestAdminPage.testWebService()'><b>testWebService</b><br>Test class: com.test.parabank.TestAdminPage</td>
 <td></td>
 <td>1</td>
-<td>com.test.parabank.TestAdminPage@7c209437</td></tr>
+<td>com.test.parabank.TestAdminPage@d8305c2</td></tr>
 <tr>
 <td title='com.test.parabank.TestAdminPage.triggerBrowser()'><b>triggerBrowser</b><br>Test class: com.test.parabank.TestAdminPage</td>
 <td></td>
 <td>0</td>
-<td>com.test.parabank.TestAdminPage@7c209437</td></tr>
+<td>com.test.parabank.TestAdminPage@d8305c2</td></tr>
 </table><p>
 </body>
 </html>

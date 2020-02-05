@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.parabank.PracticeClass">
+      <class name="com.test.parabank.PracticeClass2">
         <methods>
-          <include name="aftermethod"/>
-          <include name="test2"/>
-          <include name="test3"/>
-          <include name="test1"/>
-          <include name="teraDown"/>
+          <include name="extentOperations"/>
+          <include name="testAccessMode"/>
+          <include name="triggerBrowser"/>
         </methods>
-      </class> <!-- com.test.parabank.PracticeClass -->
+      </class> <!-- com.test.parabank.PracticeClass2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-05T20:32:24 IST" name="Default suite" finished-at="2020-02-05T20:32:37 IST" duration-ms="13064">
+  <suite started-at="2020-02-05T20:37:56 IST" name="Default suite" finished-at="2020-02-05T20:38:09 IST" duration-ms="13457">
     <groups>
     </groups>
-    <test started-at="2020-02-05T20:32:24 IST" name="Default test" finished-at="2020-02-05T20:32:37 IST" duration-ms="13064">
+    <test started-at="2020-02-05T20:37:56 IST" name="Default test" finished-at="2020-02-05T20:38:09 IST" duration-ms="13457">
       <class name="com.test.parabank.PracticeClass2">
-        <test-method signature="testAccessMode()[pri:0, instance:com.test.parabank.PracticeClass2@2d1dee39]" started-at="2020-02-05T20:32:24 IST" name="testAccessMode" finished-at="2020-02-05T20:32:36 IST" duration-ms="12788" status="PASS">
+        <test-method signature="triggerBrowser()[pri:0, instance:com.test.parabank.PracticeClass2@fc258b1]" started-at="2020-02-05T20:37:56 IST" name="triggerBrowser" finished-at="2020-02-05T20:38:08 IST" duration-ms="12190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAccessMode -->
-        <test-method is-config="true" signature="extentOperations(org.testng.ITestResult)[pri:0, instance:com.test.parabank.PracticeClass2@2d1dee39]" started-at="2020-02-05T20:32:36 IST" name="extentOperations" finished-at="2020-02-05T20:32:37 IST" duration-ms="248" status="PASS">
+        </test-method> <!-- triggerBrowser -->
+        <test-method is-config="true" signature="extentOperations(org.testng.ITestResult)[pri:0, instance:com.test.parabank.PracticeClass2@fc258b1]" started-at="2020-02-05T20:38:08 IST" name="extentOperations" finished-at="2020-02-05T20:38:08 IST" duration-ms="236" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAccessMode status=SUCCESS method=PracticeClass2.testAccessMode()[pri:0, instance:com.test.parabank.PracticeClass2@2d1dee39] output={null}]]]>
+                <![CDATA[[TestResult name=triggerBrowser status=SUCCESS method=PracticeClass2.triggerBrowser()[pri:0, instance:com.test.parabank.PracticeClass2@fc258b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentOperations -->
+        <test-method signature="testAccessMode()[pri:0, instance:com.test.parabank.PracticeClass2@fc258b1]" started-at="2020-02-05T20:38:08 IST" name="testAccessMode" finished-at="2020-02-05T20:38:09 IST" depends-on-methods="com.test.parabank.PracticeClass2.triggerBrowser" duration-ms="933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessMode -->
+        <test-method is-config="true" signature="extentOperations(org.testng.ITestResult)[pri:0, instance:com.test.parabank.PracticeClass2@fc258b1]" started-at="2020-02-05T20:38:09 IST" name="extentOperations" finished-at="2020-02-05T20:38:09 IST" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAccessMode status=SUCCESS method=PracticeClass2.testAccessMode()[pri:0, instance:com.test.parabank.PracticeClass2@fc258b1] output={null}]]]>
               </value>
             </param>
           </params>

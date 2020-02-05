@@ -16,7 +16,7 @@ import com.test.extentreports.ExtentReportClass;
 public class PracticeClass2 extends BaseClass 
 {
 	Class<?> className = TestAdminPage.class;
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void triggerBrowser() throws Exception, IOException {
 		WebDriver driver = initalizeDriver();
 		driver.get(p.getProperty("url"));
@@ -25,14 +25,10 @@ public class PracticeClass2 extends BaseClass
 		
 	}
 	
-	//@Test(dependsOnMethods= {"triggerBrowser"}, enabled=true)
-	@Test
+	@Test(dependsOnMethods= {"triggerBrowser"}, enabled=true)
+	//@Test
 	public void testAccessMode() throws InterruptedException 
 	{
-		WebDriver driver = initalizeDriver();
-		driver.get(p.getProperty("url"));
-		HomePage home = new HomePage(driver);
-		home.getAdminPage().click();
 		WebElement ele;
 		AdminPage admin = new AdminPage(driver);
 		List<WebElement> radios = admin.getRadios();

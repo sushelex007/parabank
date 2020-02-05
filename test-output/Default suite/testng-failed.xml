@@ -7,7 +7,6 @@
         <methods>
           <include name="extentOperations"/>
           <include name="testAccessMode"/>
-          <include name="triggerBrowser"/>
         </methods>
       </class> <!-- com.test.parabank.PracticeClass2 -->
     </classes>

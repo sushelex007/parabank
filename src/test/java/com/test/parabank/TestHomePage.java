@@ -4,8 +4,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
+
+import com.test.extentreports.ExtentReportClass;
 
 import junit.framework.Assert;
 
@@ -37,7 +41,7 @@ public class TestHomePage extends BaseClass
 	/*
 	 * Verify the About us functionality is working and when click the icon, it shows the right message
 	 */
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testAboutUs() throws Exception
 	{
 		String msg = "ParaBank is a demo site used for demonstration ";
@@ -55,6 +59,13 @@ public class TestHomePage extends BaseClass
 		}
 	}
 
+	@AfterMethod
+	public void extentOperations(ITestResult result) throws Exception
+	{
+		System.out.println("this is after");
+		ExtentReportClass.extentOperations(result);
+		ExtentReportClass.flushExtent();
+	}
 
 	@AfterSuite
 	public void quiteBrowser()

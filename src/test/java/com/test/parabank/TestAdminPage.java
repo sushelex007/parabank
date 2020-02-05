@@ -8,8 +8,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
+
+import com.test.extentreports.ExtentReportClass;
 
 public class TestAdminPage extends BaseClass
 {
@@ -131,6 +135,14 @@ public class TestAdminPage extends BaseClass
 	public void failTheTest()
 	{
 		Assert.assertEquals(1, -1);
+	}
+	
+	@AfterMethod
+	public void extentOperations(ITestResult result) throws Exception
+	{
+		System.out.println("this is after");
+		ExtentReportClass.extentOperations(result);
+		ExtentReportClass.flushExtent();
 	}
 	
 	@AfterSuite

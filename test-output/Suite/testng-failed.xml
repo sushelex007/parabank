@@ -3,14 +3,21 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.test.listners.UseListners"/>
-    <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.test.parabank.TestHomePage">
+        <methods>
+          <include name="testAboutUs"/>
+          <include name="extentOperations"/>
+          <include name="quiteBrowser"/>
+        </methods>
+      </class> <!-- com.test.parabank.TestHomePage -->
       <class name="com.test.parabank.TestAdminPage">
         <methods>
           <include name="failTheTest"/>
           <include name="cleanUp"/>
+          <include name="extentOperations"/>
         </methods>
       </class> <!-- com.test.parabank.TestAdminPage -->
     </classes>

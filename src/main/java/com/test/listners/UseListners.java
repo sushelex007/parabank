@@ -14,6 +14,7 @@ import org.testng.ITestResult;
 import com.test.parabank.BaseClass;
 
 public class UseListners implements ITestListener{
+	public static String screenshotname=null;
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -41,7 +42,8 @@ public class UseListners implements ITestListener{
 
 	public void takeScreenshot(WebDriver driver, String method) throws Exception {
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"/screenshots/"+System.currentTimeMillis()+method+".png"));
+		screenshotname = System.currentTimeMillis()+method+".png";
+		FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"/screenshots/"+screenshotname));
 		System.out.println("hi");
 
 

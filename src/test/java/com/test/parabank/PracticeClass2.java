@@ -37,17 +37,15 @@ public class PracticeClass2 extends BaseClass
 		while(element.hasNext())
 		{
 			ele = element.next();
-			//Thread.sleep(1000);
-			System.out.println("Hi.."+ele.getText());
 			waitNow(10);
 			ele.click();
 		}
 	}
 	
 	@AfterMethod
-	public void extentOperations(ITestResult result)
+	public void extentOperations(ITestResult result) throws Exception
 	{
-		System.out.println("this is after");
+		
 		ExtentReportClass.extentOperations(result);
 		ExtentReportClass.flushExtent();
 	}

@@ -42,7 +42,7 @@ public class HomePage
 	@FindBy(xpath="//li[@class='aboutus']/a[1]")
 	WebElement about;
 	
-	@FindBy(xpath="//div[@id='rightPanel']/p[1]")
+	@FindBy(xpath="//div[@id='rightPanel']/p[1]/")
 	WebElement displayedMsg;
 	
 	@FindBy(linkText="Admin Page")
